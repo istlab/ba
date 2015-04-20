@@ -1,7 +1,7 @@
 # Default course language
 CLANG?=el
 
-HTMLDIR?=$(UH)/dds/pubs/web/home/ba-$(CLANG)
+HTMLDIR?=$(UH)/dds/pubs/web/home/ba
 DISTDIR?=/cygdrive/d/pres
 TARGETS=$(shell sed -n 's|<li><a href="\([^"]*\)">.*|$(HTMLDIR)/\1|p' index-$(CLANG).html)
 INDEX=$(HTMLDIR)/index.html
